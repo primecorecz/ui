@@ -1,0 +1,33 @@
+{
+    "name": "primecorecz/ui",
+    "description": "View components for microsites",
+    "authors": [
+        {
+            "name": "Vit Nasinec",
+            "email": "vitnasinec@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^11.2"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Primecorecz\\Ui\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Primecorecz\\Ui\\UiServiceProvider"
+            ]
+        }
+    }
+}
