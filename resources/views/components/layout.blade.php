@@ -1,7 +1,8 @@
 @props ([
     'metaTitle' => 'Page title',
     'metaDescription' => '',
-    'metaKeywords' => ''
+    'metaKeywords' => '',
+    'scripts' => null,
 ])
 <!DOCTYPE html>
 <html lang="cs">
@@ -19,6 +20,7 @@
         <link rel="icon" type="image/svg+xml" href="{{ url('/img/favicon.svg') }}">
         <link rel="icon" type="image/png" href="{{ url('/img/favicon.png') }}">
 
+        @stack('head')
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="bg-gray-200 text-gray-700 antialiased">
