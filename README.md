@@ -11,7 +11,7 @@ https://tailwindcss.com/docs/guides/laravel
 ```
 npm install -D @tailwindcss/forms \
     @tailwindcss/typography \
-	@tailwindcss/container-queries
+    @tailwindcss/container-queries
 ```
 
 ## Update tailwind.config.js
@@ -24,9 +24,11 @@ const colors = require('tailwindcss/colors');
 module.exports = {
     darkMode: 'class',
     content: [
-    	 ...,
+        "./app/View/**/*.php",
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
         "./vendor/primecorecz/ui/resources/**/*.blade.php",
-        "./vendor/primecorecz/ui/src/View/**/*.blade.php",
+        "./vendor/primecorecz/ui/src/View/**/*.php",
     ],
     theme: {
         extend: {
