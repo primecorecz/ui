@@ -7,6 +7,9 @@
             "email": "vitnasinec@gmail.com"
         }
     ],
+    "homepage": "https://github.com/primecorecz/ui",
+    "license": "MIT",
+    "type": "library",
     "require": {
         "laravel/framework": "^11.2"
     },
