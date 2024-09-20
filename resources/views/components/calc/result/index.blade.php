@@ -15,7 +15,7 @@
             <div class="text-lg sm:text-2xl font-medium">{{ $title }}</div>
         @endif
     </div>
-    <div class="m-1 sm:m-8">
+    <div class="m-4 sm:m-6">
         {{ $slot }}
         <div class="mt-4 max-sm:mb-8 px-2 text-sm italic text-center text-gray-400">
             {{ $disclaimer }}

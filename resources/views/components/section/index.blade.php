@@ -6,7 +6,7 @@
 
     {{ $header }}
 
-    <main class="m-4 lg:m-8 xl:m-16">
+    <main class="m-8 xl:m-16">
         {{ $slot }}
     </main>
 
