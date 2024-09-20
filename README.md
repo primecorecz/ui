@@ -70,9 +70,9 @@ module.exports = {
 
     <x-primecore::container class="-mt-16">
 
-        <x-primecore::section.stripes class="!bg-gray-50">
+        <x-primecore::section.calc>
             {{ $slot }}
-        </x-primecore::section.stripes>
+        </x-primecore::section.calc>
 
         <x-primecore::section class="mt-8">
             Lorem ipsum ...
