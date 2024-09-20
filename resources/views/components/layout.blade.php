@@ -35,5 +35,8 @@
             </x-primecore::container>
 
         </div>
+        @env('local')
+            <x-primecore::breakpoints />
+        @endenv
     </body>
 </html>
