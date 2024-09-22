@@ -14,6 +14,15 @@
 
         <title>{{ $metaTitle }} | {{ config('app.name') }}</title>
 
+        <script type="application/ld+json">
+            {
+              "@context" : "https://schema.org",
+              "@type" : "WebSite",
+              "name" : "{{ config('app.name') }}",
+              "url" : "{{ config('app.url') }}"
+            }
+        </script>
+
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link rel="stylesheet" href="https://fonts.bunny.net/css?family=piazzolla:400,700" />
 
