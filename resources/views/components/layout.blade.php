@@ -29,6 +29,8 @@
         <link rel="icon" type="image/svg+xml" href="{{ url('/img/favicon.svg') }}">
         <link rel="icon" type="image/png" href="{{ url('/img/favicon.png') }}">
 
+        <livewire:styles/>
+
         @stack('head')
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -47,5 +49,8 @@
         @env('local')
             <x-primecore::breakpoints />
         @endenv
+
+        <livewire:scripts/>
+
     </body>
 </html>
