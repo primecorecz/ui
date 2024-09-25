@@ -61,12 +61,29 @@ module.exports = {
 ### Base layout component
 
 ```
-<x-primecore::layout metaTitle="Set page title here ...">
+<x-primecore::layout
+    :$metaTitle
+    :$metaDescription
+    :$metaKeywords
+>
 
     <x-primecore::header
         slogan="Set slogan here ..."
         class="pb-16 from-blue-500 to-blue-800"
     />
+
+    {{-- OR --}}
+
+    <x-primecore::header class="pb-16 from-blue-500 to-blue-800">
+        <x-primecore::header.ribbon/>
+        <x-primecore::header.container>
+            <x-primecore::header.hero
+                name="WebsiteName"
+                suffix=".cz"
+                slogan="Set slogan here ..."
+            />
+        </x-primecore::header.container>
+    </x-primecore::header>
 
     <x-primecore::container class="-mt-16">
 
