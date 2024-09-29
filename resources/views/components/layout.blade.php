@@ -2,7 +2,7 @@
     'metaTitle' => 'Page title',
     'metaDescription' => '',
     'metaKeywords' => '',
-    'scripts' => null,
+    'footer' => null,
 ])
 <!DOCTYPE html>
 <html lang="cs">
@@ -41,7 +41,11 @@
 
             <x-primecore::container class="mt-8">
                 <footer class="p-8 text-center text-gray-400 border-t border-gray-300">
-                    {{ config('app.name') }} &copy; {{ date('Y') }} Všechna práva vyhrazena.
+                    @if ($footer instanceof Illuminate\View\ComponentSlot)
+                        {{ $footer }}
+                    @else
+                        {{ config('app.name') }} &copy; {{ date('Y') }} Všechna práva vyhrazena.
+                    @endif
                 </footer>
             </x-primecore::container>
 
