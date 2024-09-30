@@ -100,6 +100,33 @@ module.exports = {
 </x-primecore::layout>
 ```
 
+## Tabs
+
+```
+@props ([
+    'active',
+])
+
+<x-primecore::tabs>
+
+    <x-primecore::tabs.item href="..." @class($active == 'position'
+        ? 'bg-white text-gray-700'
+        : 'bg-orange-400 hover:bg-orange-200 text-orange-700 hover:text-gray-600'
+    )>
+        Lorem
+    </x-primecore::tabs.item>
+
+    <x-primecore::tabs.item href="..." @class($active == 'area'
+        ? 'bg-white text-gray-700'
+        : 'bg-orange-400 hover:bg-orange-200 text-orange-700 hover:text-gray-600'
+    )>
+        Ipsum
+    </x-primecore::tabs.item>
+
+</x-primecore::tabs>
+
+```
+
 
 ### Calc
 
