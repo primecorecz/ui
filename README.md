@@ -204,3 +204,22 @@ module.exports = {
 
 </x-primecore::list.container>
 ```
+
+## Personalka Job Offers
+
+```
+<x-primecore::jobs>
+    <x-primecore::jobs.header
+        :$title
+    />
+    <x-primecore::jobs.offers
+        :$jobs
+        class="text-orange-800"
+    />
+    <x-primecore::jobs.footer
+        :$title
+        :$personalkaUrl
+        class="text-orange-800 border-orange-200 bg-orange-100 hover:bg-orange-50 focus:outline-none focus:bg-orange-50"
+    />
+</x-primecore::jobs>
+```
