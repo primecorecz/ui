@@ -171,3 +171,36 @@ module.exports = {
 
 </x-primecore::calc>
 ```
+
+## Lists
+
+```
+<x-primecore::list.container>
+
+    <x-primecore::list.select>
+        <option disabled="disabled" value="">Vyberte profesi</option>
+        @foreach ($positions as $position)
+            <option value="{{ "pozice/{$position->slug}" }}">{{ $position->title }}</option>
+        @endforeach
+    </x-primecore::list.select>
+
+    <x-primecore::stripes/>
+
+    @foreach ($positionGroups as $groupTitle => $positions)
+        <x-primecore::list.group>
+
+            <x-primecore::list.group.title>
+                {{ $groupTitle }}
+            </x-primecore::list.group.title>
+
+            <x-primecore::list.items>
+                @foreach ($positions as $position)
+                    <li>...</li>
+                @endforeach
+            </x-primecore::list.items>
+
+        </x-primecore::list.group>
+    @endforeach
+
+</x-primecore::list.container>
+```
