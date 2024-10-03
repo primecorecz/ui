@@ -1,5 +1,6 @@
 @props([
-    'name' => str(config('app.name'))->before('.cz'),
+    'name' => null,
+    'suffix' => null,
     'slogan' => null,
 ])
 <header {{ $attributes->class('bg-gradient-to-br') }}>
