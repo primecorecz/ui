@@ -17,10 +17,7 @@
         'text-4xl sm:text-5xl md:text-6xl font-bold',
         'lg:pr-8 lg:pb-2 lg:border-r-2 border-white' => !! $slogan
     ])>
-        {{ $name }}
-        @if ($suffix)
-            <span class="opacity-50">{{ $suffix }}</span>
-        @endif
+        {{ $name }}@if ($suffix)<span class="opacity-50">{{ $suffix }}</span>@endif
     </a>
     <span class="text-xl sm:text-2xl text-center">
         {{ $slogan }}
