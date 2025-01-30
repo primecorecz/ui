@@ -11,8 +11,7 @@
     "license": "MIT",
     "type": "library",
     "require": {
-        "laravel/framework": "^11.2",
-        "primecorecz/links": "^1.2"
+        "laravel/framework": "^11.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

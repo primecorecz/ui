@@ -6,7 +6,6 @@ namespace Primecorecz\Ui;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Primecorecz\Ui\View\Components\Links;
 
 class UiServiceProvider extends ServiceProvider
 {
@@ -15,7 +14,5 @@ class UiServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'primecore');
 
         Blade::componentNamespace('Primecorecz\\Ui\\View\\Components', 'primecore');
-
-        Blade::component('links', Links::class);
     }
 }
