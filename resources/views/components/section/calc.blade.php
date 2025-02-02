@@ -1,8 +1,6 @@
 @props([
-    'header' => null,
-    //null->stripes,
-    false->noheader,
-    anythingelse->render'footer' => null,
+    'header' => null, // null -> stripes, false -> no header, anything else -> render
+    'footer' => null,
 ])
 <section {{ $attributes->class('overflow-hidden rounded-sm bg-gray-50 shadow-xl') }}>
     @if ($header === null)
