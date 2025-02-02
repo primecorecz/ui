@@ -19,7 +19,7 @@
                     <div class="text-base font-medium leading-5">{{ $title }} &ndash; další pracovní nabídky</div>
                 </div>
             </div>
-            <div class="ml-5 flex-shrink-0">
+            <div class="ml-5 shrink-0">
                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path
                         fill-rule="evenodd"

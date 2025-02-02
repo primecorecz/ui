@@ -35,7 +35,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="bg-gray-200 text-gray-700 antialiased">
-        <div class="grid min-h-screen grid-rows-[auto,1fr,auto]">
+        <div class="grid min-h-screen grid-rows-[auto_1fr_auto]">
             {{ $slot }}
 
             <x-primecore::container class="mt-8">

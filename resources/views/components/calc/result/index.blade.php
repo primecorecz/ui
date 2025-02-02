@@ -4,15 +4,15 @@
     'credits',
 ])
 
-<div class="border-accented rounded border-2 bg-white">
-    <div class="m-1 flex items-center gap-4 rounded-sm bg-gray-100 px-2 py-6">
+<div class="border-accented rounded-sm border-2 bg-white">
+    <div class="m-1 flex items-center gap-4 rounded-xs bg-gray-100 px-2 py-6">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="-mt-1 h-[4.5rem] flex-shrink-0 text-gray-300"
+            class="-mt-1 h-[4.5rem] shrink-0 text-gray-300"
         >
             <path
                 stroke-linecap="round"
@@ -32,7 +32,7 @@
             {{ $disclaimer }}
         </div>
     </div>
-    <div class="m-1 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-sm bg-gray-100 px-8 py-4">
+    <div class="m-1 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-xs bg-gray-100 px-8 py-4">
         <span class="text-center">{{ $credits }}</span>
         <a href="{{ url('https://personalka.cz') }}" target="_blank">
             <x-primecore::logo.blue class="h-6" />

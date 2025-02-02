@@ -4,7 +4,7 @@
     false->noheader,
     anythingelse->render'footer' => null,
 ])
-<section {{ $attributes->class('overflow-hidden rounded bg-gray-50 shadow-xl') }}>
+<section {{ $attributes->class('overflow-hidden rounded-sm bg-gray-50 shadow-xl') }}>
     @if ($header === null)
         <x-primecore::stripes />
     @elseif ($header !== false)

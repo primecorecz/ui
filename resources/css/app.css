@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+    --color-accented: #3b82f6;
+
+    --font-heading: Piazzolla, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+
+    --background-image-gradient-stripes: repeating-linear-gradient(
+        75deg,
+        var(--tw-gradient-from),
+        var(--tw-gradient-from) 1rem,
+        var(--tw-gradient-to) 1rem,
+        var(--tw-gradient-to) 1.5rem
+    );
+}
+
+/*
+The default border color has changed to `currentColor` in Tailwind CSS v4,
+so we've added these compatibility styles to make sure everything still
+looks the same as it did with Tailwind CSS v3.
+
+If we ever want to remove these styles, we need to add an explicit border
+color utility to any element that depends on these defaults.
+*/
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}

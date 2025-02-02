@@ -5,7 +5,7 @@
 <li {{ $attributes->class('border-t border-gray-200') }}>
     <a
         href="{{ $job->url }}"
-        class="block transition duration-150 ease-in-out hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+        class="block transition duration-150 ease-in-out hover:bg-gray-50 focus:bg-gray-50 focus:outline-hidden"
     >
         <div class="relative flex flex-col gap-4 px-8 py-4 md:flex-row md:items-center">
             <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
@@ -96,12 +96,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-between gap-4">
-                <div class="flex-shrink-0">
-                    <div class="flex overflow-hidden rounded bg-gray-200 p-3">
+                <div class="shrink-0">
+                    <div class="flex overflow-hidden rounded-sm bg-gray-200 p-3">
                         <x-primecore::logo.blue class="w-28" />
                     </div>
                 </div>
-                <div class="absolute inset-4 left-auto flex items-center md:static md:flex-shrink-0">
+                <div class="absolute inset-4 left-auto flex items-center md:static md:shrink-0">
                     <!-- Heroicon name: chevron-right -->
                     <svg
                         class="h-5 w-5 text-gray-400"

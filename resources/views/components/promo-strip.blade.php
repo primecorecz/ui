@@ -1,7 +1,7 @@
 <div
     {{
         $attributes->class([
-            'bg-accented rounded bg-gradient-to-tl p-4 lg:p-8',
+            'bg-accented rounded-sm bg-linear-to-tl p-4 lg:p-8',
             'mt-8 xl:mt-16' => ! str($attributes->get('class'))->contains('mt-'),
         ])
     }}

@@ -3,7 +3,7 @@
     'suffix' => null,
     'slogan' => null,
 ])
-<header {{ $attributes->class('bg-gradient-to-br') }}>
+<header {{ $attributes->class('bg-linear-to-br') }}>
     @if ($slot->isNotEmpty())
         {{ $slot }}
     @else
