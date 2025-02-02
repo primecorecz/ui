@@ -1,4 +1,3 @@
-
-<div {{ $attributes->class('bg-gray-100 p-8 rounded') }}>
+<div {{ $attributes->class('rounded bg-gray-100 p-8') }}>
     {{ $slot }}
 </div>

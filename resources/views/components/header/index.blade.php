@@ -4,7 +4,6 @@
     'slogan' => null,
 ])
 <header {{ $attributes->class('bg-gradient-to-br') }}>
-
     @if ($slot->isNotEmpty())
         {{ $slot }}
     @else
@@ -13,5 +12,4 @@
             <x-primecore::header.hero />
         </x-primecore::header.container>
     @endif
-
 </header>

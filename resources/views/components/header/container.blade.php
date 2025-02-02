@@ -1,3 +1,3 @@
-<div {{ $attributes->class('md:min-h-[20rem] py-8 px-4 grid place-content-center') }}>
+<div {{ $attributes->class('grid place-content-center px-4 py-8 md:min-h-[20rem]') }}>
     {{ $slot }}
 </div>

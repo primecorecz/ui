@@ -1,4 +1,3 @@
-
-<section {{ $attributes->class('bg-gray-100 rounded overflow-hidden') }}>
+<section {{ $attributes->class('overflow-hidden rounded bg-gray-100') }}>
     {{ $slot }}
 </section>

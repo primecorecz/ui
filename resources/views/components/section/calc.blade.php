@@ -1,9 +1,10 @@
 @props([
-    'header' => null, // null -> stripes, false -> no header, anything else -> render
-    'footer' => null,
+    'header' => null,
+    //null->stripes,
+    false->noheader,
+    anythingelse->render'footer' => null,
 ])
-<section {{ $attributes->class('bg-gray-50 rounded shadow-xl overflow-hidden') }}>
-
+<section {{ $attributes->class('overflow-hidden rounded bg-gray-50 shadow-xl') }}>
     @if ($header === null)
         <x-primecore::stripes />
     @elseif ($header !== false)
@@ -19,5 +20,4 @@
     @elseif ($footer !== false)
         {{ $header }}
     @endif
-
 </section>

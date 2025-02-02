@@ -12,10 +12,10 @@
     $name ??= str(config('app.name'))->before('.cz');
     $suffix ??='.cz'
 @endphp
-<div {{ $attributes->class('flex flex-col lg:flex-row gap-y-4 gap-x-8 items-center font-heading text-white') }}>
+<div {{ $attributes->class('font-heading flex flex-col items-center gap-x-8 gap-y-4 text-white lg:flex-row') }}>
     <a href="/" @class([
-        'text-4xl sm:text-5xl md:text-6xl font-bold',
-        'lg:pr-8 lg:pb-2 lg:border-r-2 border-white' => !! $slogan
+        'text-4xl font-bold sm:text-5xl md:text-6xl',
+        'border-white lg:border-r-2 lg:pb-2 lg:pr-8' => !! $slogan
     ])>
         {{ $name }}@if ($suffix)<span class="opacity-50">{{ $suffix }}</span>@endif
     </a>

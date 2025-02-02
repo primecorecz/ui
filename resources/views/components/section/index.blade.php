@@ -2,8 +2,7 @@
     'header' => null,
     'footer' => null,
 ])
-<section {{ $attributes->class('bg-white rounded shadow-xl overflow-hidden') }}>
-
+<section {{ $attributes->class('overflow-hidden rounded bg-white shadow-xl') }}>
     {{ $header }}
 
     <main class="m-8 xl:m-16">
@@ -11,5 +10,4 @@
     </main>
 
     {{ $footer }}
-
 </section>

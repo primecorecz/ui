@@ -1,7 +1,8 @@
-
-<nav {{ $attributes->class([
-    'inline-flex',
-    'rounded-t-md overflow-hidden',
-]) }}>
+<nav {{
+    $attributes->class([
+        'inline-flex',
+        'overflow-hidden rounded-t-md',
+    ])
+}}>
     {{ $slot }}
 </nav>
