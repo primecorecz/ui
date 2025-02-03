@@ -9,51 +9,48 @@ https://tailwindcss.com/docs/guides/laravel
 
 ## Install Tailwind plugins
 ```
-npm install -D @tailwindcss/forms \
-    @tailwindcss/typography \
-    @tailwindcss/container-queries
+npm install -D tailwindcss \
+    @tailwindcss/vite \
+    @tailwindcss/forms \
+    @tailwindcss/typography
 ```
 
-## Update tailwind.config.js
+## Update postcss.config.js
 
 ```
-const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-    darkMode: 'class',
-    content: [
-        "./app/View/**/*.php",
-        "./resources/**/*.blade.php",
-        "./resources/**/*.js",
-        "./vendor/primecorecz/ui/resources/**/*.blade.php",
-        "./vendor/primecorecz/ui/src/View/**/*.php",
-    ],
-    theme: {
-        extend: {
-            colors: {
-                accented: colors.blue['500'], // Set your preffered color here
-            },
-            fontFamily: {
-                heading: ['Piazzolla', ...defaultTheme.fontFamily.serif],
-            },
-            backgroundImage: {
-                'gradient-stripes': `repeating-linear-gradient(75deg,
-                    var(--tw-gradient-from),
-                    var(--tw-gradient-from) 1rem,
-                    var(--tw-gradient-to) 1rem,
-                    var(--tw-gradient-to) 1.5rem)`,
-            },
-        },
+export default {
+    plugins: {
+        '@tailwindcss/postcss': {},
     },
-    plugins: [
-        require("@tailwindcss/forms"),
-        require('@tailwindcss/typography'),
-        require('@tailwindcss/container-queries'),
-    ],
-}
+};
+```
 
+## Update vite.config.js
+
+```
+import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
+import laravel from 'laravel-vite-plugin';
+
+export default defineConfig({
+    plugins: [
+        tailwindcss(),
+        laravel({
+            input: ['resources/css/app.css', 'resources/js/app.js'],
+            refresh: true,
+        }),
+    ],
+});
+```
+
+## Update ./resources/css/app.css
+
+```
+@import url('../../vendor/primecorecz/ui/resources/css/app.css');
+
+@theme {
+    --color-accented: var(--color-lime-500);
+}
 ```
 
 ## Example usage
