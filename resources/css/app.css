@@ -3,9 +3,8 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-@source '../../vendor/primecorecz/ui/resources';
-@source '../../vendor/primecorecz/links/resources';
 @source '../views';
+@source '../../../links/resources';
 
 @theme {
     --color-accented: var(--color-blue-100);
