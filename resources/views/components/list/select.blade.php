@@ -5,7 +5,7 @@
         }"
         x-model="slug"
         x-on:change="window.location.replace(slug)"
-        class="focus:border-accented focus:ring-accented block w-full rounded-sm border border-gray-300 bg-white px-4 py-2 focus:ring-3 focus:ring-opacity-25"
+        class="block w-full rounded-sm border border-gray-300 bg-white px-4 py-2 focus:border-accented focus:ring-3 focus:ring-accented/25"
     >
         {{ $slot }}
     </select>

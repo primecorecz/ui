@@ -13,10 +13,12 @@
 
 @layer utilities {
     .bg-gradient-stripes {
-        background-image: repeating-linear-gradient(75deg,
+        background-image: repeating-linear-gradient(
+            75deg,
             var(--tw-gradient-from),
             var(--tw-gradient-from) 1rem,
             var(--tw-gradient-to) 1rem,
-            var(--tw-gradient-to) 1.5rem);
+            var(--tw-gradient-to) 1.5rem
+        );
     }
 }

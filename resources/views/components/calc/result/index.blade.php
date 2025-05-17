@@ -4,7 +4,7 @@
     'credits',
 ])
 
-<div class="border-accented rounded-sm border-2 bg-white">
+<div class="rounded-sm border-2 border-accented bg-white">
     <div class="m-1 flex items-center gap-4 rounded-xs bg-gray-100 px-2 py-6">
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@
     </div>
     <div class="m-4 sm:m-6">
         {{ $slot }}
-        <div class="mt-4 text-balance px-2 text-center text-sm italic text-gray-400 sm:m-6">
+        <div class="mt-4 px-2 text-center text-sm text-balance text-gray-400 italic sm:m-6">
             {{ $disclaimer }}
         </div>
     </div>

@@ -1,4 +1,4 @@
-<div class="fixed right-2 top-[90vh] h-8 w-8 rounded-full bg-red-500 text-center text-xl font-bold text-white">
+<div class="fixed top-[90vh] right-2 h-8 w-8 rounded-full bg-red-500 text-center text-xl font-bold text-white">
     <span class="sm:hidden">no</span>
     <span class="hidden sm:max-md:block">sm</span>
     <span class="hidden md:max-lg:block">md</span>

@@ -16,7 +16,7 @@
         <div class="flex items-center p-8 pr-4 md:pr-8">
             <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
                 <div>
-                    <div class="text-base font-medium leading-5">{{ $title }} &ndash; další pracovní nabídky</div>
+                    <div class="text-base leading-5 font-medium">{{ $title }} &ndash; další pracovní nabídky</div>
                 </div>
             </div>
             <div class="ml-5 shrink-0">

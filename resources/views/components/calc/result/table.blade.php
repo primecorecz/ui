@@ -1,5 +1,5 @@
 <table class="w-full">
-    <tbody class="[&>tr]:border-accented [&>tr]:border-b [&_td]:px-2 [&_td]:py-4 sm:[&_td]:px-4">
+    <tbody class="[&_td]:px-2 [&_td]:py-4 sm:[&_td]:px-4 [&>tr]:border-b [&>tr]:border-accented">
         {{ $slot }}
     </tbody>
 </table>

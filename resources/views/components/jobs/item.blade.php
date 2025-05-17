@@ -10,7 +10,7 @@
         <div class="relative flex flex-col gap-4 px-8 py-4 md:flex-row md:items-center">
             <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
                 <div>
-                    <div class="text-base font-medium leading-5">
+                    <div class="text-base leading-5 font-medium">
                         {{ $job->title }}
                     </div>
                     <div class="mt-2 flex">
