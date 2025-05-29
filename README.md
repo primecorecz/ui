@@ -220,3 +220,22 @@ export default defineConfig({
     />
 </x-primecore::jobs>
 ```
+
+## About page template
+
+```
+<x-primecore::page.about>
+    <h1>...</h1>
+    <p class="lead">
+        ...
+    </p>
+
+    <x-slot:microsites>
+        <x-primecore::microsite title="DůchodovýVěk.cz" url="https://duchodovyvek.cz">
+            <x-slot:icon class="from-teal-600 to-teal-500">DV</x-slot>
+            Vše, co potřebujete znát o vašem odchodu do důchodu
+        </x-primecore::microsite>
+        ...
+    </x-slot:microsites>
+</x-primecore::page.about>
+```
