@@ -44,7 +44,7 @@
                         {{ $footer }}
                     @else
                         {{ config('app.name') }} &copy; {{ date('Y') }} Všechna práva vyhrazena. Web provozuje
-                        <a href="{{ url('/kontakt') }}">Primecore s.r.o.</a>
+                        <a href="{{ url('/kontakt') }}" class="underline">Primecore s.r.o.</a>
                     @endif
                 </footer>
             </x-primecore::container>
