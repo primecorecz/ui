@@ -43,8 +43,14 @@
                     @if ($footer instanceof Illuminate\View\ComponentSlot)
                         {{ $footer }}
                     @else
-                        {{ config('app.name') }} &copy; {{ date('Y') }} Všechna práva vyhrazena. Web provozuje
+                        <span class="inline-block">
+                            {{ config('app.name') }} &copy; {{ date('Y') }} Všechna práva vyhrazena. Web provozuje
+                        </span>
                         <a href="{{ url('/kontakt') }}" class="underline">Primecore s.r.o.</a>
+                        &ndash;
+                        <a href="https://primecore.cz/reference" class="underline" target="_blank">
+                            reference a zkušenosti
+                        </a>
                     @endif
                 </footer>
             </x-primecore::container>
