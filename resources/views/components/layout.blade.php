@@ -46,11 +46,12 @@
                         <span class="inline-block">
                             {{ config('app.name') }} &copy; {{ date('Y') }} Všechna práva vyhrazena. Web provozuje
                         </span>
-                        <a href="{{ url('/kontakt') }}" class="underline">Primecore s.r.o.</a>
-                        &ndash;
-                        <a href="https://primecore.cz/reference" class="underline" target="_blank">
-                            reference a zkušenosti
-                        </a>
+                        <a href="{{ url('/kontakt') }}" class="inline-block underline">Primecore s.r.o.</a>
+                        <span class="inline-block">
+                            {{-- format-ignore-start --}}
+                            (<a href="https://primecore.cz/reference" class="underline" target="_blank">reference a zkušenosti</a>)
+                            {{-- format-ignore-end --}}
+                        </span>
                     @endif
                 </footer>
             </x-primecore::container>
