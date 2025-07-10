@@ -16,8 +16,8 @@
 
         <script type="application/ld+json">
             {
-                "@context": "https://schema.org",
-                "@type": "WebSite",
+                "@@context": "https://schema.org",
+                "@@type": "WebSite",
                 "name": "{{ config('app.name') }}",
                 "url": "{{ config('app.url') }}"
             }
