@@ -31,8 +31,8 @@
         {{-- format-ignore-start --}}
         <p>
             <a href="https://www.primecore.cz"><strong>Primecore s.r.o.</strong></a><br />
-            Dělnická 213/12<br />
-            170 00 Praha - Holešovice
+            Jankovcova 1037/49<br />
+            170 00 Praha 7
         </p>
         <p>
             IČO: 06262856<br />
